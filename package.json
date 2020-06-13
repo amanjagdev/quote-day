@@ -1,0 +1,12 @@
+{
+  "name": "quote-day",
+  "version": "1.0.0",
+  "description": "It displays quote of the day",
+  "main": "server.js",
+  "repository": "https://github.com/amanjagdev/quote-day.git",
+  "author": "Aman Jagdev",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
