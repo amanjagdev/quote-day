@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #555;
+}
+
+.header h1 {
+  font-weight: 600;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
