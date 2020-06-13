@@ -51,6 +51,23 @@ const setHtmlForQuote = (quote) => {
 //First Time
 getQuote();
 
+
+// !START : NOT FOR PRODUCTION //
+// TODO:  FUN ONLY //
+
+// let speed = prompt("Whats your speed ins seconds ?");
+// if(speed === ""){
+//     speed = 2;
+// }
+// speed = Number(speed);
+
+// setInterval(() => {
+//     getQuote();
+// },speed*1000)
+
+// !END :  NOT FOR PRODUCTION //
+
+
 //Click on button
 newQuoteBtn.addEventListener('click', () => {
     getQuote();
