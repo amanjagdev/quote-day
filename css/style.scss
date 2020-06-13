@@ -1,0 +1,55 @@
+//THEMES
+.green {
+  background: green;
+}
+
+.pink {
+  background: pink
+}
+
+.yellow {
+  background: yellow;
+}
+
+.orange {
+  background: orange;
+}
+
+body {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+
+  .header {
+    padding: 10px;
+    text-align: center;
+    h1 {
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+
+  .main {
+    display: flex;
+    margin: 10%;
+    justify-content: space-around;
+    button {
+      border-radius: 30px;
+      outline: none;
+      border: none;
+      padding: 10px;
+      margin: 30px;
+      height: max-content;
+    }
+  }
+
+  .footer {
+    height: 100px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .main {
+      flex-direction: column;
+    }
+  }
+}
