@@ -35,12 +35,15 @@ const setHtmlForQuote = (quote) => {
 
     header.classList.remove(prevTheme);
     header.classList.add(currentTheme);
+    newQuoteBtn.style.borderRadius = `${Math.floor(Math.random() * 100)}px`;
 
     footer.classList.remove(prevTheme);
     footer.classList.add(currentTheme);
+    newQuoteBtn.style.borderRadius = `${Math.floor(Math.random() * 100)}px`;
 
     newQuoteBtn.classList.remove(prevTheme);
     newQuoteBtn.classList.add(currentTheme);
+    newQuoteBtn.style.borderRadius = `${Math.floor(Math.random() * 100)}px`;
 
     prevTheme = currentTheme;
 }

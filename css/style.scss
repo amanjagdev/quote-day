@@ -4,7 +4,7 @@
 }
 
 .pink {
-  background: pink
+  background: pink;
 }
 
 .yellow {
@@ -19,8 +19,9 @@ body {
   font-family: Poppins;
   margin: 0;
   padding: 0;
-
+  
   .header {
+    border: #000 solid;
     padding: 10px;
     text-align: center;
     h1 {
@@ -28,7 +29,7 @@ body {
       margin: 0;
     }
   }
-
+  
   .main {
     display: flex;
     margin: 10%;
@@ -40,11 +41,13 @@ body {
       padding: 10px;
       margin: 30px;
       height: max-content;
+      border: #000 solid;
     }
   }
 
   .footer {
     height: 100px;
+    border: #000 solid;
   }
 
   @media only screen and (max-width: 600px) {
