@@ -4,10 +4,11 @@ const quoteHtml = document.querySelector(".quote");
 const header = document.querySelector(".header");
 const footer = document.querySelector(".footer");
 
+const image = document.querySelector("img");
 
-let quote;
+let quote,imageUrl;
 
-const themes = ['green','pink','yellow','orange'];
+const themes = ['green', 'pink', 'yellow', 'orange'];
 let prevTheme = 'green';
 
 const getQuote = () => {
@@ -17,6 +18,12 @@ const getQuote = () => {
             quote = data;
             setHtmlForQuote(quote);
         });
+
+    fetch("https://picsum.photos/200")
+        .then((data) => {
+            imageUrl = data.url;
+            image.setAttribute('src',imageUrl);
+        });
 }
 
 const setHtmlForQuote = (quote) => {
@@ -25,18 +32,21 @@ const setHtmlForQuote = (quote) => {
         <h4>${quote.content}</h4>
         <h5>By : "${quote.author}"</h5>
     `;
-    
+
     header.classList.remove(prevTheme);
     header.classList.add(currentTheme);
 
     footer.classList.remove(prevTheme);
     footer.classList.add(currentTheme);
 
+    newQuoteBtn.classList.remove(prevTheme);
+    newQuoteBtn.classList.add(currentTheme);
+
     prevTheme = currentTheme;
 }
 
 //First Time
-getQuote(); 
+getQuote();
 
 //Click on button
 newQuoteBtn.addEventListener('click', () => {
